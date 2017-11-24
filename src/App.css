@@ -1,0 +1,146 @@
+.App {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.image-row{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: baseline;
+  align-content: stretch;
+
+}
+
+.image-size{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.nav-bar{
+  width: 100vw;
+  background-color: black;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+    color: white;
+}
+
+.nav-scroll{
+  position: fixed;
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: stretch;
+}
+
+li {
+  background-color: black;
+  padding-right: 15px;
+ 
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 20px;
+  background-color: black;
+  font-size: 18px;
+  text-decoration: none;
+  align-content: stretch;
+  font-family: 'nitti', sans-serif;
+  
+}
+li a:hover{
+  color: rgb(216, 0, 216);
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@font-face {
+  font-family: 'nitti';
+  src: url('./Nitti_Font/nitti-webfont.eot');
+  src: url('./Nitti_Font/nitti-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./Nitti_Font/nitti-webfont.woff') format('woff'),
+       url('./Nitti_Font/nitti-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.testfont{
+font-family: 'nitti', sans-serif;
+color: white;
+}
+
+.black-font{
+  font-family: 'nitti', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  }
+
+.top-black{
+  background-color: black;
+height: 100vh;
+width: 100vw;
+display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+
+
+}
+
+.num2-box{
+height: 500px;
+width: 100vw;
+}
+.num2-column-it{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+.num2-arrange{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+.text-block{
+  width: 50vw
+}

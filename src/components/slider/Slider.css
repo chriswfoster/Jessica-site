@@ -1,0 +1,50 @@
+  
+  
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: slid 10s infinite reverse;
+    animation-timing-function: ease-in;
+    
+  }
+  
+  .slider li {
+    width: 50%;
+    list-style: none;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+  }
+  
+  .slider img {
+    width: 50vw;
+    height: 50vh;
+  }
+  
+  @keyframes slid {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
+  
+  .test{
+    background-image: url("./Placeholder.jpg");
+  }
