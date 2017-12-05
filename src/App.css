@@ -74,6 +74,7 @@ li a {
 }
 li a:hover {
   color: rgb(216, 0, 216);
+  font-style: italic;
 }
 
 @keyframes App-logo-spin {
