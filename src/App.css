@@ -1,11 +1,10 @@
 .App {
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;
-
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .App-logo {
@@ -13,34 +12,33 @@
   height: 80px;
 }
 
-.image-row{
+.image-row {
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: baseline;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
   align-content: stretch;
-
 }
 
-.image-size{
+.image-size {
   width: 200px;
   height: 200px;
   margin: 20px;
 }
 
-.nav-bar{
+.nav-bar {
   width: 100vw;
   background-color: black;
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-start;
-    color: white;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
 }
 
-.nav-scroll{
+.nav-scroll {
   position: fixed;
   width: 100vw;
 }
@@ -52,17 +50,16 @@ ul {
   overflow: hidden;
   background-color: black;
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
 }
 
 li {
   background-color: black;
   padding-right: 15px;
- 
 }
 
 li a {
@@ -73,75 +70,75 @@ li a {
   font-size: 18px;
   text-decoration: none;
   align-content: stretch;
-  font-family: 'nitti', sans-serif;
-  
+  font-family: "nitti", sans-serif;
 }
-li a:hover{
+li a:hover {
   color: rgb(216, 0, 216);
 }
 
-
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @font-face {
-  font-family: 'nitti';
-  src: url('./Nitti_Font/nitti-webfont.eot');
-  src: url('./Nitti_Font/nitti-webfont.eot?#iefix') format('embedded-opentype'),
-       url('./Nitti_Font/nitti-webfont.woff') format('woff'),
-       url('./Nitti_Font/nitti-webfont.ttf') format('truetype');
+  font-family: "nitti";
+  src: url("./Nitti_Font/nitti-webfont.eot");
+  src: url("./Nitti_Font/nitti-webfont.eot?#iefix") format("embedded-opentype"),
+    url("./Nitti_Font/nitti-webfont.woff") format("woff"),
+    url("./Nitti_Font/nitti-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-.testfont{
-font-family: 'nitti', sans-serif;
-color: white;
+.testfont {
+  font-family: "nitti", sans-serif;
+  color: white;
 }
 
-.black-font{
-  font-family: 'nitti', sans-serif;
+.black-font {
+  font-family: "nitti", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 18px;
-  }
+}
 
-.top-black{
+.top-black {
   background-color: black;
-height: 100vh;
-width: 100vw;
-display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch;
-
-
-}
-
-.num2-box{
-height: 500px;
-width: 100vw;
-background-color: rgb(216, 0, 216);
-}
-.num2-column-it{
+  height: 100vh;
+  width: 100vw;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
 }
-.num2-arrange{
+
+.num2-box {
+  height: 600px;
+  width: 100vw;
+  background-color: rgb(216, 0, 216);
+}
+.num2-column-it {
   display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
 }
-.text-block{
-  width: 50vw
+.num2-arrange {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+.text-block {
+  width: 50vw;
 }
