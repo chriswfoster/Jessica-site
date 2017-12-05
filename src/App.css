@@ -124,6 +124,7 @@ display: flex;
 .num2-box{
 height: 500px;
 width: 100vw;
+background-color: rgb(216, 0, 216);
 }
 .num2-column-it{
   display: flex;
