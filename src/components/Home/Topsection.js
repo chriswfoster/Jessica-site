@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Slider from './slider/Slider.js'
-import './../App.css'
+
 
 
 

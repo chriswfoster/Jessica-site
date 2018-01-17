@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import '../App.css'
+import './home.css'
 
 export default class Num2 extends Component{
 

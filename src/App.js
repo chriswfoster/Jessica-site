@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Topsection from './components/Topsection'
-import Num2 from './components/Num2'
-import Nav from './components/Nav'
+import Nav from './components/Nav/Nav'
+import router from './router'
 
 import './App.css';
 
@@ -10,12 +9,9 @@ class App extends Component {
     return (
       <div>
         <div className ="nav-scroll">
-        <Nav/>
-        </div>
-        <div className="App">
-        <Topsection />
-        <Num2 />
-      </div>
+        <Nav />
+    </div>
+      {router}
       </div>
     );
   }

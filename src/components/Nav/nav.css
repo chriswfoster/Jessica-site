@@ -1,0 +1,15 @@
+.nav-bar {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+  }
+  
+  .nav-scroll {
+    position: fixed;
+    width: 100vw;
+  }
