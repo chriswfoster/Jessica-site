@@ -3,7 +3,6 @@ import './nav.css'
 import {Link} from 'react-router-dom'
 
 
-
 export default class Nav extends Component{
 
 
@@ -27,10 +26,13 @@ export default class Nav extends Component{
                       <li><Link to="/art">ART</Link></li>
                       <li><Link to="/contact">CONTACT</Link></li>
                       <li><a href="#about">ABOUT</a></li>
+                   
                     </ul>
+                    
                     </div>
 
                 <div>
+                    
                     </div>
 
 

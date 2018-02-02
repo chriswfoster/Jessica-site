@@ -1,0 +1,14 @@
+.loginbuttonstyling{
+    display: block;
+    color: white;
+    padding: 20px;
+    background-color: black;
+    font-size: 18px;
+    text-decoration: none;
+    align-content: stretch;
+    font-family: "nitti", sans-serif;
+}
+.loginbuttonstyling:hover{
+    color: rgb(216, 0, 216);
+    font-style: italic;
+}

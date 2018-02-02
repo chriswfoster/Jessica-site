@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Topsection from './Topsection'
 import Num2 from './Num2'
+
+
+
 import './home.css'
 
 class Home extends Component {
