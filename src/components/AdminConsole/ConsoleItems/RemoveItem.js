@@ -1,35 +1,38 @@
-import React, {Component} from 'react'
+import React, { Component } from "react"
+import axios from 'axios';
 
 
-
-class RemoveItem extends Component{
-constructor(){
+class RemoveItem extends Component {
+  constructor() {
     super()
-    this.state={
-        
-        
-    }
-}
-
-deleteItem(){
-    const {toremove} = this.props
-    console.log(toremove)
+    this.state = {}
+this.deleteItem = this.deleteItem.bind(this)  
 }
 
 
-    render(){
-        const {toremove} = this.props
-        return(
-            <div>
-                <div
+  deleteItem() {
+    const { toremove } = this.props
+    this.props.itemToDelete(toremove)
+    this.closeWindow()
+  }
+  closeWindow(){
+    this.props.displayFunction("loginNOPE")
+  }
+
+  render() {
+    const { toremove } = this.props
+    return (
+      <div>
+        <div
           className={this.state.showModal}
-          onClick={() => this.displayModalHandler()}
+          
         >
           <div> DELETE ITEM ID#{toremove}</div>
-      <button onClick={()=> this.deleteItem()}>YES</button><button>No</button>
+          <button onClick={() => this.deleteItem()}>YES</button>
+          <button onClick={()=> this.closeWindow()}>No</button>
         </div>
-                </div>
-        )
-    }
+      </div>
+    )
+  }
 }
 export default RemoveItem

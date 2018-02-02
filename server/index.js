@@ -86,6 +86,7 @@ app.get("/logout", function(req, res) {
 
 app.post('/api/createItem', controller.createItem)
 app.get('/api/getallitems', controller.getAllItems)
+app.post('/api/removeItem', controller.removeItem)
 
 const path = require("path")
 app.get("*", (req, res, next) => {
