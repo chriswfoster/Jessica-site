@@ -32,11 +32,45 @@
 .loginModal{
     background-color: black;
     color: white;
-    top: 25%;
-    right: 25%;
-    width: 50%;
-    height: 50%;
+    
    position: absolute;
    border-style: solid;
    border-color: orange;
+   animation-name: loginboxanimator;
+   animation-duration: 0.3s;
+   animation-fill-mode: forwards;
+   -webkit-animation-name: loginboxanimator;
+   -webkit-animation-duration: 0.3s;
+   -webkit-animation-fill-mode: forwards;
 }
+@keyframes loginboxanimator {
+    0%{
+        right: 37.5%;
+        top: 37.5%;
+width: 25%;
+height: 25%;
+    }
+    70%{
+        top: 12.5%;
+        right: 12.5%;
+ width: 75%;
+ height: 75%;
+    }
+    100% { 
+        top: 25%;
+        right: 25%;
+     width: 50%;
+     height: 50%;
+     }
+ }
+ @-webkit-keyframes loginboxanimator {
+    0%{
+        width: 25%;
+            }
+            70%{
+         width: 75%;
+            }
+            100% { 
+             width: 50%;
+             }
+ }

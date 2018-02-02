@@ -11,9 +11,9 @@ class Login extends Component {
   }
 
   displayModalHandler() {
-    this.state.showModal === "loginNOPE" ? 
-    this.setState({ showModal: "loginModalBackground" }) :
-    this.setState({showModal: "loginNOPE"})
+    this.state.showModal === "loginNOPE"
+      ? this.setState({ showModal: "loginModalBackground" })
+      : this.setState({ showModal: "loginNOPE" })
   }
 
   render() {
@@ -26,8 +26,11 @@ class Login extends Component {
           LOGIN
         </p>
 
-        <div className={this.state.showModal} onClick={()=>this.displayModalHandler() }>
-          <div className="loginModal">THIS MODAL</div>
+        <div
+          className={this.state.showModal}
+          onClick={() => this.displayModalHandler()}
+        >
+          <div className="loginModal">THIS THE LOGIN MODAL</div>
         </div>
       </div>
     )
