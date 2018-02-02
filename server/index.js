@@ -5,7 +5,7 @@ const session = require("express-session")
 const massive = require("massive")
 const passport = require("passport")
 const Auth0Strategy = require("passport-auth0")
-
+const controller = require("./controller/controller.js")
 const { secret } = require("../config").session
 const { domain, clientID, clientSecret } = require("../config.js").auth0
 const { connectionString } = require("../config").massive
@@ -83,6 +83,8 @@ app.get("/logout", function(req, res) {
   req.session.destroy()
   res.redirect("/")
 })
+
+app.post('/api/createItem', controller.createItem)
 
 const path = require("path")
 app.get("*", (req, res, next) => {
