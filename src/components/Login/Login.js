@@ -26,7 +26,7 @@ class Login extends Component {
           LOGIN
         </p>
 
-        <div className={this.state.showModal}>
+        <div className={this.state.showModal} onClick={()=>this.displayModalHandler() }>
           <div className="loginModal">THIS MODAL</div>
         </div>
       </div>

@@ -23,7 +23,8 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
-    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.336);
+   
 }
 .loginNOPE{
     display: none;
@@ -35,4 +36,7 @@
     right: 25%;
     width: 50%;
     height: 50%;
+   position: absolute;
+   border-style: solid;
+   border-color: orange;
 }
