@@ -7,7 +7,7 @@ import Home from './components/Home/Home'
 import Shop from './components/Shop/Shop'
 import Art from './components/Art/Art'
 import Contact from './components/Contact/Contact'
-
+import AdminConsole from './components/AdminConsole/AdminConsole'
 import store from './store'
 
 
@@ -18,6 +18,7 @@ export default(
     <Route path="/shop" component={Shop} />
     <Route path="/art" component={Art} />
     <Route path="/contact" component={Contact} />
+    <Route path="/adminconsole" component={AdminConsole} />
         
         </Switch>
     </Provider>
