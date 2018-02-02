@@ -7,8 +7,32 @@
     text-decoration: none;
     align-content: stretch;
     font-family: "nitti", sans-serif;
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    cursor: pointer;
+    border-style: solid;
+    border-color: white;
 }
 .loginbuttonstyling:hover{
     color: rgb(216, 0, 216);
     font-style: italic;
+}
+
+.loginModalBackground{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+}
+.loginNOPE{
+    display: none;
+}
+.loginModal{
+    background-color: black;
+    color: white;
+    top: 25%;
+    right: 25%;
+    width: 50%;
+    height: 50%;
 }

@@ -12,8 +12,8 @@ class App extends Component {
       <div>
         <div className ="nav-scroll">
         <Nav />
-        <Login />
     </div>
+    <Login />
       {router}
       </div>
     );
