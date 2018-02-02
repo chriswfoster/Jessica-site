@@ -1,12 +1,33 @@
 import React, {Component} from 'react'
-import { RemoteInfo } from 'dgram';
+
+
 
 class RemoveItem extends Component{
+constructor(){
+    super()
+    this.state={
+        
+        
+    }
+}
+
+deleteItem(){
+    const {toremove} = this.props
+    console.log(toremove)
+}
+
 
     render(){
+        const {toremove} = this.props
         return(
             <div>
-                Removes Item.
+                <div
+          className={this.state.showModal}
+          onClick={() => this.displayModalHandler()}
+        >
+          <div> DELETE ITEM ID#{toremove}</div>
+      <button onClick={()=> this.deleteItem()}>YES</button><button>No</button>
+        </div>
                 </div>
         )
     }

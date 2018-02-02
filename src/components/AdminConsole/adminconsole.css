@@ -1,45 +1,62 @@
-.adminconsolebg{
-    height: 100vh;
-    width: 100vw;
+.adminconsolebg {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+.adminconsolebg form {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  text-align: center;
+}
+
+.adminconsolebg form input {
+  margin: 1%;
+}
+.adminconsolebg form span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.showitemsimages {
+  max-height: 50%;
+}
+.showitemstileborder {
+  border-style: solid;
+  width: 30%;
+  height: 50%;
+  margin-bottom: 2%;
+}
+.showitemsoverflowcontrol {
+  overflow: scroll;
+  height: 60vh;
+}
+.showitemstileX {
+color: red;
+  float: top;
+  float: right;
+  cursor: pointer;
+}
+.displayRemoveItem{
     background-color: black;
     color: white;
-   
-}
-
-.adminconsolebg form{
-    width: 100%;
-    height: 100%;
-    color: white;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-    align-content: stretch;
-    text-align: center;
-}
-
-.adminconsolebg form input{
-
-margin: 1%;
-}
-.adminconsolebg form span{
-    display: flex;
-   width: 100%;
-    justify-content: center;
-
-}
-
-.showitemsimages{
-    max-height: 50%;
-}
-.showitemstileborder{
-    border-style: solid;
-    width: 30%;
-    height: 50%;
-    margin-bottom: 2%;
-}
-.showitemsoverflowcontrol{
-    overflow: scroll;
-    height: 60vh;
+    
+   position: absolute;
+   border-style: solid;
+   border-color: orange;
+   animation-name: loginboxanimator;
+   animation-duration: 0.3s;
+   animation-fill-mode: forwards;
+   -webkit-animation-name: loginboxanimator;
+   -webkit-animation-duration: 0.3s;
+   -webkit-animation-fill-mode: forwards;
 }
