@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-
+import {Link} from 'react-router-dom'
 import "./login.css"
 
 class Login extends Component {
@@ -30,7 +30,9 @@ class Login extends Component {
           className={this.state.showModal}
           onClick={() => this.displayModalHandler()}
         >
-          <div className="loginModal">THIS THE LOGIN MODAL</div>
+          <div className="loginModal">- LOGIN INCOMPLETE -
+          <Link to="/adminconsole" style={{color: 'white'}}> CLICK TO VISIT ADMIN CONSOLE</Link> </div>
+      
         </div>
       </div>
     )
