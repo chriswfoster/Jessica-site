@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import axios from 'axios'
 
 class AddItem extends Component {
 constructor(){
@@ -43,6 +43,9 @@ constructor(){
                 })
               }
         )
+    }
+    hideThisModal(){
+      this.modalHider()
     }
     render(){
         return(
@@ -96,6 +99,9 @@ constructor(){
         >
           SUBMIT
         </button>
+        <button onClick={() =>  this.hideThisModal()}>
+          CANCEL
+          </button>
         </form>
                 </div>
         )

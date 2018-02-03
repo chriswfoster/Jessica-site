@@ -65,12 +65,21 @@ height: 25%;
  }
  @-webkit-keyframes loginboxanimator {
     0%{
-        width: 25%;
-            }
-            70%{
-         width: 75%;
-            }
-            100% { 
-             width: 50%;
-             }
+        right: 37.5%;
+        top: 37.5%;
+width: 25%;
+height: 25%;
+    }
+    70%{
+        top: 12.5%;
+        right: 12.5%;
+ width: 75%;
+ height: 75%;
+    }
+    100% { 
+        top: 25%;
+        right: 25%;
+     width: 50%;
+     height: 50%;
+     }
  }

@@ -11,9 +11,8 @@ module.exports = {
   },
   getAllItems: function(req, res, next) {
     const dbInstance = req.app.get("db")
-      
-      dbInstance
-      .get_all_items()
+    
+    dbInstance.get_all_items()
           .then((response) => {
             res.status(200).send(response)})
           .catch(()=> res.status(500).send())

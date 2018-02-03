@@ -45,14 +45,13 @@ class ShowItems extends Component {
   render() {
     const { itemslist } = this.state
     const displayList = itemslist.map((item, i) => (
-      <div className="showitemstileorganizer showitemstileborder" key={i}>
+      <div className="adminconsoleitemsorganize showitemstileborder" key={i}>
         {/* This CSS class ^ is found in Shop's css file. */}
         <div
           onClick={() => this.removeItem(item.item_id)}
           className="showitemstileX"
         >
-          {" "}
-          X{" "}
+          X
         </div>
         <img
           src={item.item_picurl}
@@ -60,9 +59,9 @@ class ShowItems extends Component {
           alt="No Image available"
         />
 
-        <p style={{ color: "white" }}>Item: {item.item_name}</p>
-        <p style={{ color: "white" }}>Price: {item.item_price}</p>
-        <p>Item Id: {item.item_id}</p>
+        <p style={{ color: "white" }}><p style={{color: "red"}}>Item:</p> {item.item_name}</p>
+        <p style={{ color: "white" }}><p style={{color: "red"}}>Price:</p> {item.item_price}</p>
+        <p><p style={{color: "red"}}>Item Id:</p> {item.item_id}</p>
       </div>
     ))
     return (
