@@ -3,6 +3,13 @@
   width: 100vw;
   background-color: black;
   color: white;
+  overflow: scroll;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
 }
 
 .adminconsolebg form {
@@ -24,11 +31,13 @@
 .adminconsolebg form span {
   display: flex;
   width: 100%;
-  justify-content: center;
+ 
+  color: white;
 }
 
 .showitemsimages {
   max-height: 50%;
+
 }
 .showitemstileborder {
   border-style: solid;
@@ -39,6 +48,7 @@
 .showitemsoverflowcontrol {
   overflow: scroll;
   height: 60vh;
+  overflow-x: hidden;
 }
 .showitemstileX {
 color: red;

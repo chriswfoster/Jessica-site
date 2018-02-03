@@ -8,7 +8,8 @@ class ShowItems extends Component {
     this.state = {
       itemslist: [],
       itemToRemove: 0,
-      showRemoveModal: "loginNOPE"
+      showRemoveModal: "loginNOPE",
+  
     }
   }
 
@@ -21,6 +22,24 @@ class ShowItems extends Component {
 
   removeItem(id) {
     this.setState({ itemToRemove: id, showRemoveModal: "displayRemoveItem" })
+  }
+
+  deleteItem() {
+    const {itemToRemove, itemslist} = this.state
+    const temparray = itemslist;
+    axios.post('/api/removeItem', {
+      item_id: itemToRemove
+    })
+    for (var i = 0; i < temparray.length; i++){
+      if (temparray[i].item_id === itemToRemove){
+        temparray.splice(i, 1)
+      }
+      this.setState({itemslist: temparray})
+    }
+    this.closeWindow()
+  }
+  closeWindow(){
+    this.setState({showRemoveModal: "loginNOPE"})
   }
 
   render() {
@@ -53,20 +72,13 @@ class ShowItems extends Component {
         </div>
 
         <div className={this.state.showRemoveModal}>
-          <RemoveItem
-            toremove={this.state.itemToRemove}
-            displayFunction={show => this.setState({ showRemoveModal: show })}
-            itemToDelete={id =>
-              axios
-                .post("/api/removeItem", {
-                  item_id: id
-                })
-                .then(response => {
-                  console.log(response)
-                  this.setState({ itemslist: response.data })
-                })
-            }
-          />
+        <div
+          className={this.state.showModal}
+          >
+          <div> DELETE ITEM ID#: {this.state.questionitem}</div>
+          <button onClick={() => this.deleteItem()}>YES</button>
+          <button onClick={()=> this.closeWindow()}>No</button>
+        </div>
         </div>
       </div>
     )

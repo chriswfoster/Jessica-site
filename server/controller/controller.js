@@ -26,7 +26,8 @@ module.exports = {
     console.log(item_id)
     dbInstance
     .remove_item(item_id)
-    .then((response) => res.status(200).send(response))
+    .then((response) => {
+      res.status(200).send(response)})
     .catch(() => res.status(500).send())
   }
 }
