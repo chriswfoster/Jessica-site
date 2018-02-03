@@ -8,27 +8,17 @@ constructor(){
     super()
     this.state ={
         shopitems: [
-            {itemname: "shoes",
-            price: "33.55",
-            picurl: Placeholder},
-            {itemname: "shoes",
-            price: "33.55",
-            picurl: Placeholder},
-            {itemname: "shoes",
-            price: "11.18",
-            picurl: Placeholder},
-            {itemname: "shoes",
-            price: "3.55",
-            picurl: Placeholder},
-            {itemname: "Shirts",
-            price: "55.83",
-            picurl: Placeholder},
-            {itemname: "pants",
-            price: "5.00",
+            {itemname: "NO ITEMS LISTED",
+            price: "0.00",
             picurl: Placeholder}
+            
         ]
 
     }
+}
+componentDidMount(){
+    axios.get('/api/getallitems')
+    .then(response => this.setState({shopitems: response.data}))
 }
 getShopProducts(){
     axios.get("/api/getallproducts")
