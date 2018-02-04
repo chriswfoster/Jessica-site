@@ -30,8 +30,8 @@ getShopProducts(){
         const itemlist = shopitems.map((item, i) => (
             <div className="itemtileorganizer">
             
-                <img src={Placeholder}/>
-                <div><p style={{color: 'violet'}}>Item: {item.itemname}</p> <p style={{color: 'red'}}>Price: {item.price}</p></div>
+                <img src={item.item_picurl} className="shopImageSize"/>
+                <div><p style={{color: 'violet'}}>Item: {item.item_name}</p> <p style={{color: 'red'}}>Price: {item.item_price}</p></div>
                 </div>
         ))
         return(
