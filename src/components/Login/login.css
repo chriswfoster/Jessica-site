@@ -32,7 +32,7 @@
 .loginModal{
     background-color: black;
     color: white;
-    
+    text-align: center;
    position: absolute;
    border-style: solid;
    border-color: orange;
