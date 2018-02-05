@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import axios from "axios"
-import ItemDetails from './ItemDetails'
+import ItemDetails from "./ItemDetails"
 import "./shop.css"
 import Placeholder from "./../Home/slider/Placeholder.jpg"
 
@@ -13,16 +13,18 @@ class Shop extends Component {
           item_name: "NO ITEMS LISTED",
           price: "0.00",
           picurl: Placeholder,
-          showModal: "loginNOPE",
-          itemToModify: {}
+          
         }
-      ]
+      ],
+      showModal: "loginNOPE",
+      itemToModify: {}
     }
   }
   componentDidMount() {
     axios
       .get("/api/getallitems")
       .then(response => this.setState({ shopitems: response.data }))
+
   }
   getShopProducts() {
     axios.get("/api/getallproducts").then(response => console.log(response))
@@ -34,9 +36,12 @@ class Shop extends Component {
   }
 
   render() {
-    const { shopitems } = this.state
+    const { shopitems, showModal } = this.state
     const itemlist = shopitems.map((item, i) => (
-      <div className="itemtileorganizer" onClick={() => this.showItemModel(item)}>
+      <div
+        className="itemtileorganizer"
+        onClick={() => this.showItemModel(item)}
+      >
         <img src={item.item_picurl} className="shopImageSize" />
         <div>
           <p style={{ color: "violet" }}>Item: {item.item_name}</p>{" "}
@@ -48,17 +53,17 @@ class Shop extends Component {
       <div className="shopbackground">
         <div
           className={
-            this.state.showModal == "loginNOPE"
-              ? "loginNOPE"
-              : "backgroundcloserimage"
+            showModal === "loginNOPE" ? "loginNOPE" : "backgroundcloserimage"
           }
           onClick={() => this.showItemModel()}
         />
         Shop items go here.
         <div className="itemsorganizer">{itemlist}</div>
         <div className={this.state.showModal}>
-        <ItemDetails itemInfo={this.state.itemToModify}/>
-         </div>
+        <div className="showitemstileX" onClick={()=> this.showItemModel()}> X </div>
+          <ItemDetails itemInfo={this.state.itemToModify} />
+       
+        </div>
       </div>
     )
   }

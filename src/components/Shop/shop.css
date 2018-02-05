@@ -63,6 +63,20 @@
   -webkit-animation-duration: 0.3s;
   -webkit-animation-fill-mode: forwards;
 }
+.inspectModalImageSize{
+  max-height: 35vh;
+  max-width: 35vw;
+}
+.inspectModalLayout{
+  height: 100%;
+  width: 100%;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
 
 @keyframes showitemboxanimator {
   0% {
