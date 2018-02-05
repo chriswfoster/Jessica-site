@@ -58,26 +58,29 @@ class ShowItems extends Component {
             className="showitemsimages"
             alt="No Image available"
           />
-          <table><tr>
-            <th><p style={{ color: "red" }}>Item:</p> 
+          <table>
+            <tr>
+              <th>
+                <p style={{ color: "red" }}>Item:</p>
               </th>
-              <th><p style={{ color: "red" }}>Price:</p> </th>
-              <th><p style={{ color: "red" }}>Item Id:</p> </th>
+              <th>
+                <p style={{ color: "red" }}>Price:</p>{" "}
+              </th>
+              <th>
+                <p style={{ color: "red" }}>Item Id:</p>{" "}
+              </th>
             </tr>
             <tr>
-              <td><p style={{ color: "white" }}>
-              {item.item_name}
-            </p>
-                </td>
-                <td><p style={{ color: "white" }}>
-       ${item.item_price}
-            </p>
-                  </td>
-                  <td><p>
-           {item.item_id}
-            </p>
-                    </td>
-              </tr>
+              <td>
+                <p style={{ color: "white" }}>{item.item_name}</p>
+              </td>
+              <td>
+                <p style={{ color: "white" }}>${item.item_price}</p>
+              </td>
+              <td>
+                <p>{item.item_id}</p>
+              </td>
+            </tr>
           </table>
         </div>
       </div>
@@ -89,8 +92,8 @@ class ShowItems extends Component {
         </div>
 
         <div className={this.state.showRemoveModal}>
-          <div className={this.state.showModal}>
-            <div> DELETE ITEM ID#: {this.state.questionitem}</div>
+          <div className="removeitemmodal">
+            <h1 style={{color: "red"}}> DELETE ITEM ID#: {this.state.itemToRemove}</h1>
             <button onClick={() => this.deleteItem()}>YES</button>
             <button onClick={() => this.closeWindow()}>No</button>
           </div>

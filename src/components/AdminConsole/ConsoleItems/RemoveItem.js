@@ -27,9 +27,11 @@ this.deleteItem = this.deleteItem.bind(this)
           className={this.state.showModal}
           
         >
+        <div>
           <div> DELETE ITEM ID#{toremove}</div>
           <button onClick={() => this.deleteItem()}>YES</button>
           <button onClick={()=> this.closeWindow()}>No</button>
+          </div>
         </div>
       </div>
     )
