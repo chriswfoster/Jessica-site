@@ -23,12 +23,13 @@ class AdminConsole extends Component {
   render() {
     return (
       <div className="adminconsolebg">
+      <div className="adminconsoletopitems">
+          <div onClick={() => this.displayAddItem()} className="addItembutton">ADD AN ITEM</div>
+         </div>
         <div className={this.state.componentToShow}>
         <AddItem modalHider={() => this.displayAddItem()}/>
         </div>
-        <div className="adminconsoletopitems">
-          <div onClick={() => this.displayAddItem()} className="addItembutton">ADD AN ITEM</div>
-         </div>
+        
         <div><ShowItems /></div>
         
       </div>

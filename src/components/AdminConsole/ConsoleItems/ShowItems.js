@@ -66,7 +66,7 @@ class ShowItems extends Component {
     ))
     return (
       <div>
-        <div className="itemsorganizer showitemsoverflowcontrol">
+        <div className="showitemsorganizer showitemsoverflowcontrol">
           {displayList}
         </div>
 
