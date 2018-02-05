@@ -8,7 +8,7 @@ constructor(){
     super()
     this.state ={
         shopitems: [
-            {itemname: "NO ITEMS LISTED",
+            {item_name: "NO ITEMS LISTED",
             price: "0.00",
             picurl: Placeholder}
             
